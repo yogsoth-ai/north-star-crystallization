@@ -99,49 +99,60 @@ Each layer has a single concern. A Strategy never executes an SOP directly. A Ta
 
 ### 📁 Repository Structure
 
+All skills are **flat** under `skills/` — no nested `strategy/tactic/sop/` subdirectories. This means users can `cp -r skills/ ~/.claude/skills/` and immediately have all 33 skills available as `/` commands.
+
 ```
 north-star-crystallization/
 ├── skills/
-│   ├── north-star/           # Entry point — /north-star skill
-│   ├── strategy/
-│   │   ├── cold-start/       # Full flow for zero-context users
-│   │   ├── warm-start/       # Partial flow for users with some direction
-│   │   └── hot-start/        # Minimal flow for users with clear direction
-│   ├── tactic/
-│   │   ├── actor-profiling/          # WHO is the researcher
-│   │   ├── landscape-reconnaissance/ # WHAT does the field look like
-│   │   ├── direction-narrowing/      # WHERE specifically to go
-│   │   ├── obstacle-analysis/        # WHAT stands in the way
-│   │   ├── goal-decomposition/       # HOW to break it down
-│   │   └── north-star-synthesis/     # CRYSTALLIZE the final output
-│   └── sop/
-│       ├── explore-resume/             # Dialogue: understand background
-│       ├── clarify-resources/          # Dialogue: map available resources
-│       ├── ask-constraints/            # Dialogue: surface constraints
-│       ├── ask-intentionality/         # Dialogue: uncover motivations
-│       ├── generate-candidate-fields/  # Subagent: generate field candidates
-│       ├── broad-web-search/           # Import: web-browsing/web-search
-│       ├── broad-paper-search/         # Import: literature-engine/literature-overview
-│       ├── deep-web-search/            # Import: web-browsing/web-research
-│       ├── landscape-synthesis/        # Subagent: evaluate fields → FieldPanorama
-│       ├── present-and-ask/            # Dialogue: show panorama, gather preferences
-│       ├── present-candidates/         # Dialogue: show ranked sub-directions
-│       ├── identify-obstacles/         # Subagent: enumerate barriers
-│       ├── assess-obstacle-severity/   # Subagent: rate obstacle difficulty
-│       ├── propose-mitigations/        # Subagent: evidence-backed solutions
-│       ├── ask-obstacle-acceptance/    # Dialogue: user accepts or rejects
-│       ├── formulate-top-goal/         # Dialogue: formal goal statement
-│       ├── and-or-decompose/           # Subagent: KAOS goal tree
-│       ├── validate-leaves/            # Subagent: leaf node quality check
-│       ├── feasibility-check/          # Subagent: reality check vs profile
-│       ├── ask-decomposition-validation/ # Dialogue: user confirms tree
-│       ├── crystallize-north-star/     # Dialogue: final one-sentence output
-│       ├── generate-research-brief/    # Subagent: aggregate all context
-│       └── final-validation/           # Dialogue: quality gate + user confirm
+│   ├── north-star/                   # Entry point — /north-star
+│   │
+│   │   # Strategies (3)
+│   ├── cold-start/                   # Full flow for zero-context users
+│   ├── warm-start/                   # Partial flow for users with some direction
+│   ├── hot-start/                    # Minimal flow for users with clear direction
+│   │
+│   │   # Tactics (6)
+│   ├── actor-profiling/              # WHO is the researcher
+│   ├── landscape-reconnaissance/     # WHAT does the field look like
+│   ├── direction-narrowing/          # WHERE specifically to go
+│   ├── obstacle-analysis/            # WHAT stands in the way
+│   ├── goal-decomposition/           # HOW to break it down
+│   ├── north-star-synthesis/         # CRYSTALLIZE the final output
+│   │
+│   │   # SOPs — Dialogue (11)
+│   ├── explore-resume/               # Understand background
+│   ├── clarify-resources/            # Map available resources
+│   ├── ask-constraints/              # Surface constraints
+│   ├── ask-intentionality/           # Uncover motivations
+│   ├── present-and-ask/              # Show panorama, gather preferences
+│   ├── present-candidates/           # Show ranked sub-directions
+│   ├── ask-obstacle-acceptance/      # User accepts or rejects obstacles
+│   ├── formulate-top-goal/           # Formal goal statement
+│   ├── ask-decomposition-validation/ # User confirms goal tree
+│   ├── crystallize-north-star/       # Final one-sentence output
+│   ├── final-validation/             # Quality gate + user confirm
+│   │
+│   │   # SOPs — Subagent (9)
+│   ├── generate-candidate-fields/    # Generate field candidates
+│   ├── landscape-synthesis/          # Evaluate fields → FieldPanorama
+│   ├── identify-obstacles/           # Enumerate barriers
+│   ├── assess-obstacle-severity/     # Rate obstacle difficulty
+│   ├── propose-mitigations/          # Evidence-backed solutions
+│   ├── and-or-decompose/             # KAOS goal tree
+│   ├── validate-leaves/              # Leaf node quality check
+│   ├── feasibility-check/            # Reality check vs profile
+│   ├── generate-research-brief/      # Aggregate all context
+│   │
+│   │   # SOPs — Import (3)
+│   ├── broad-web-search/             # → web-browsing/web-search
+│   ├── broad-paper-search/           # → literature-engine/literature-overview
+│   └── deep-web-search/              # → web-browsing/web-research
 ├── tests/
 │   └── integration-prompt.md   # Live integration test scenarios
 └── README.md
 ```
+
+Users can copy the entire `skills/` directory into their `.claude/skills/` to register all 33 skills as `/` commands.
 
 ---
 
