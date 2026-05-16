@@ -12,7 +12,7 @@ Focus within chosen field(s). Identify specific sub-directions and present ranke
 | SOP | Purpose | Execution |
 |-----|---------|-----------|
 | broad-paper-search | Scan papers in the chosen field(s) | import: literature-overview |
-| deep-web-search | Deep reading of web resources in the field | import: web-research |
+| deep-web-search | Deep reading of web resources in the field | subagent |
 | present-candidates | Present ranked sub-directions to user | dialogue |
 
 ## Methodology Guidance

@@ -55,7 +55,7 @@ Tactic (6 available)
   → Methodology: HOW to combine SOPs into coherent workflows
   → Available SOPs + sequencing logic
 
-SOP (23 total: 11 dialogue + 9 subagent + 3 import)
+SOP (23 total: 11 dialogue + 10 subagent + 2 import)
   → Execution: HOW to do one specific thing
   → Either talks to user, spawns an agent, or imports external skill
 ```
@@ -132,9 +132,10 @@ north-star-crystallization/
 │   ├── crystallize-north-star/       # Final one-sentence output
 │   ├── final-validation/             # Quality gate + user confirm
 │   │
-│   │   # SOPs — Subagent (9)
+│   │   # SOPs — Subagent (10)
 │   ├── generate-candidate-fields/    # Generate field candidates
 │   ├── landscape-synthesis/          # Evaluate fields → FieldPanorama
+│   ├── deep-web-search/              # Full-page web reading (isolated context)
 │   ├── identify-obstacles/           # Enumerate barriers
 │   ├── assess-obstacle-severity/     # Rate obstacle difficulty
 │   ├── propose-mitigations/          # Evidence-backed solutions
@@ -143,10 +144,9 @@ north-star-crystallization/
 │   ├── feasibility-check/            # Reality check vs profile
 │   ├── generate-research-brief/      # Aggregate all context
 │   │
-│   │   # SOPs — Import (3)
+│   │   # SOPs — Import (2)
 │   ├── broad-web-search/             # → web-browsing/web-search
-│   ├── broad-paper-search/           # → literature-engine/literature-overview
-│   └── deep-web-search/              # → web-browsing/web-research
+│   └── broad-paper-search/           # → literature-engine/literature-overview
 ├── tests/
 │   └── integration-prompt.md   # Live integration test scenarios
 └── README.md
@@ -182,8 +182,8 @@ Users can copy the entire `skills/` directory into their `.claude/skills/` to re
 | Type | Count | Execution Model |
 |------|-------|-----------------|
 | **Dialogue** | 11 | CC talks directly to user — one question at a time, multiple choice preferred |
-| **Subagent** | 9 | CC spawns a focused sub-agent with a dedicated prompt.md |
-| **Import** | 3 | Delegates to external skill (web-browsing or literature-engine) |
+| **Subagent** | 10 | CC spawns a focused sub-agent with a dedicated prompt.md |
+| **Import** | 2 | Delegates to external skill (web-browsing or literature-engine) |
 
 ---
 
