@@ -1,0 +1,3 @@
+north-star-crystallization
+
+Goal-Driven Requirement Refinement Engine for Research — crystallize your North Star through adaptive dialogue and on-demand investigation.
