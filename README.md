@@ -34,7 +34,7 @@ Because most people don't know. And those who think they know often haven't vali
 
 North Star Crystallization treats research direction as a **requirements engineering problem**. The user is a stakeholder with fuzzy needs; the skill's job is to elicit, structure, validate, and crystallize those needs into actionable requirements.
 
-### 📖 The Strategy Book (兵法书) Metaphor
+### 📖 The Strategy Book Metaphor
 
 This is not a pipeline. It's a **strategy book** — CC reads it and makes autonomous decisions about:
 - Which tactics to deploy and in what order

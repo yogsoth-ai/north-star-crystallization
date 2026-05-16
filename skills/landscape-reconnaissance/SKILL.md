@@ -25,7 +25,7 @@ Broad, shallow field exploration. Understand the landscape of possibilities befo
 ## Hard Constraints
 
 - `broad-web-search`: brave_web_search count=10 per call, at least 150 total results before synthesis
-- `landscape-synthesis`: Don't only chase niche/novel combinations. Must also consider direct frontal competition in hot fields. The ambition to tackle hard problems head-on must be present (正面冲击火热领域的心气).
+- `landscape-synthesis`: Don't only chase niche/novel combinations. Must also consider direct frontal competition in hot fields. The ambition to tackle hard problems head-on must be present.
 
 ## Output (Tactic-Level Aggregation)
 

@@ -28,4 +28,4 @@ Load the corresponding strategy and follow it. This entry point does nothing bey
 
 ## Design Philosophy
 
-This is a strategy book (兵法书), not a pipeline orchestration file. Strategies provide war doctrine and available tactics. Tactics provide methodology guidance and available SOPs. SOPs are specific techniques. You are the general — read the book, then decide.
+This is a strategy book, not a pipeline orchestration file. Strategies provide war doctrine and available tactics. Tactics provide methodology guidance and available SOPs. SOPs are specific techniques. You are the general — read the book, then decide.

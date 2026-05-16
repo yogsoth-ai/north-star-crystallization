@@ -13,7 +13,7 @@ All SOPs in this strategy follow these rules:
 
 - One question at a time — never overwhelm with multiple questions
 - Prefer multiple choice when possible — easier to answer
-- Always allow "不确定" / "待定" as legitimate answers
+- Always allow "unsure" / "TBD" as legitimate answers
 - Always ask WHY — not just "what do you want" but "why do you want it"
 - After user answers: confirm understanding before continuing
 - If user's answer reveals new information: immediately follow up

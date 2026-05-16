@@ -1,6 +1,6 @@
 ---
 name: formulate-top-goal
-description: "Express the user's chosen research direction as a formal goal statement in the format: '实现 [what], 使得 [effect], 在 [constraints] 下'. Confirm with user before proceeding to decomposition."
+description: "Express the user's chosen research direction as a formal goal statement in the format: 'Achieve [what], such that [effect], under [constraints]'. Confirm with user before proceeding to decomposition."
 execution: dialogue
 ---
 
@@ -14,7 +14,7 @@ Dialogue — inline, no subagent.
 
 ## Format
 
-"实现 [what], 使得 [effect], 在 [constraints] 下"
+"Achieve [what], such that [effect], under [constraints]"
 
 ## Process
 

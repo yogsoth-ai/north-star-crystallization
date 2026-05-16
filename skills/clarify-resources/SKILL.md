@@ -1,6 +1,6 @@
 ---
 name: clarify-resources
-description: Understand what resources the user has available for research — compute, timeline, collaboration, data access, experimental environment. Every item accepts '待定' as a valid answer.
+description: Understand what resources the user has available for research — compute, timeline, collaboration, data access, experimental environment. Every item accepts 'TBD' as a valid answer.
 execution: dialogue
 ---
 
@@ -22,7 +22,7 @@ Dialogue — inline, no subagent.
 
 ## Key Behavior
 
-Every item accepts "待定" (TBD) as a valid answer. Note TBD items — they may need revisiting later.
+Every item accepts "TBD" as a valid answer. Note TBD items — they may need revisiting later.
 
 ## Output
 
