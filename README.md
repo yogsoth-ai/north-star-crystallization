@@ -77,7 +77,7 @@ Each layer has a single concern. A Strategy never executes an SOP directly. A Ta
 
 ```
 ┌───────────────────────────────────────────────────────────────┐
-│  ENTRY POINT (/north-star)                                    │
+│  ENTRY POINT (ENTRY.md)                                       │
 │  Routes to strategy based on user's information density       │
 ├───────────────────────────────────────────────────────────────┤
 │  STRATEGY (3)                                                 │
@@ -103,8 +103,9 @@ All skills are **flat** under `skills/` — no nested `strategy/tactic/sop/` sub
 
 ```
 north-star-crystallization/
+├── ENTRY.md                          # Root entry point
 ├── skills/
-│   ├── north-star/                   # Entry point — /north-star
+│   ├── north-star-crystallization/   # Campaign SKILL.md
 │   │
 │   │   # Strategies (3)
 │   ├── cold-start/                   # Full flow for zero-context users
@@ -237,13 +238,13 @@ The ResearchBrief is a **requirement context document** — it tells downstream 
 Invoke the `/north-star` skill in a Claude Code session:
 
 ```
-/north-star
+/north-star-crystallization
 ```
 
 Or read the entry point directly:
 
 ```
-Read skills/north-star/SKILL.md. I want to publish a paper but I have no idea what to work on.
+Read ENTRY.md. I want to publish a paper but I have no idea what to work on.
 ```
 
 ### Prerequisites
