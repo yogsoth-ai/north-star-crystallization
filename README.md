@@ -11,6 +11,8 @@
 
 Transforms fuzzy research intent into a crystallized **North Star** statement and structured **ResearchBrief** through adaptive dialogue and on-demand investigation. Not a chatbot that asks "what do you want to research?" — a structured coaching system that discovers the answer with you.
 
+> 🧭 **Part of the [De-Anthropocentric Research Engine](https://github.com/yogsoth-ai/de-anthropocentric-research-engine).** This repository is one of nine composable research packages that make up DARE — the full autonomous research-orchestration system. DARE bundles this package together with the others into a single self-contained clone, unified under one orchestrator. To use these skills as intended — with the spec-driven orchestrator and cross-package routing — clone the [main repository](https://github.com/yogsoth-ai/de-anthropocentric-research-engine) rather than this repo alone.
+
 ---
 
 ## ⚡ What It Does
@@ -261,4 +263,4 @@ Read ENTRY.md. I want to publish a paper but I have no idea what to work on.
 
 ---
 
-*Part of the [Yogsoth AI](https://github.com/yogsoth-ai) ecosystem. Built by [Pthahnix](https://github.com/Pthahnix).*
+*A component of the [De-Anthropocentric Research Engine](https://github.com/yogsoth-ai/de-anthropocentric-research-engine), part of the [Yogsoth AI](https://github.com/yogsoth-ai) ecosystem. Built by [Pthahnix](https://github.com/Pthahnix).*
